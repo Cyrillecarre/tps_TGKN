@@ -51,3 +51,25 @@
 .expertises {
     width: 500px;
 }
+
+.sectionExpertise {
+    background-color: rgb(222, 217, 211);
+    padding-bottom: 150px;
+}
+
+.footer-widgets {
+    padding: 50px;
+    margin: 0;
+    background-color: rgb(115, 156, 223);
+    height: 200px;
+    align-items: center;
+}
+.full-width-footer {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.text {
+    font-size: 20px;
+}
