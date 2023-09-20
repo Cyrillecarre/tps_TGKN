@@ -25,7 +25,7 @@
                             <a class="nav-link" id="homeButton" href="#">HOME</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">EXPERTISES</a>
+                            <a class="nav-link" id="expertiseButton" href="index.html#expertise">EXPERTISES</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" id="photoButton" href="#">PHOTOS</a>
@@ -41,8 +41,8 @@
     <main>
         <img class="col-12" src="/photo_tgkn/img_site/camion20.png" alt="accueil1">
     </main>
-    <section class="sectionExpertise">
-        <h1 class="titre">Expertises</h1>
+    <section class="sectionExpertise" id="expertise">
+        <h1 class="titre" id="expertiseTitle">Expertises</h1>
         <p class="text-center text">Spécialiste du transport de marchandises vrac, depuis plus de 5 ans, </p>
         <br>
         <p class="text-center text">Nous saurons répondre à vos attentes pour vous apporter le soutient logistique adapté à vos besoins !</p>
@@ -52,48 +52,52 @@
         <br>
     <div class="row">
         <div class="col-md-5 col-xs-12 text-center">
-            <h2>Transport vrac DIB</h2>
-            <img src="/photo_tgkn/phototek/camion21.jpg" class="col-10 expertises" alt="">
+            <h2 class="expertise-item">Transport vrac DIB</h2>
+            <img src="/photo_tgkn/phototek/camion21.jpg" class="col-10 expertises expertise-item" alt="">
         </div>
         <div class="col-md-5 col-xs-12 text-center">
-            <h2>Transport vrac déchets</h2>
-            <img src="/photo_tgkn/phototek/camion28.jpg" class="col-10 expertises" alt="">
-        </div>
-        <div class="col-md-5 col-xs-12 text-center">
-            <br>
-            <br>
-            <h2>Transport palettisé</h2>
-            <img src="/photo_tgkn/phototek/camion29.jpg" class="col-10 expertises" alt="">
+            <h2 class="expertise-item">Transport vrac déchets</h2>
+            <img src="/photo_tgkn/phototek/camion28.jpg" class="col-10 expertises expertise-item" alt="">
         </div>
         <div class="col-md-5 col-xs-12 text-center">
             <br>
             <br>
-            <h2>Transport vrac sur-mesure</h2>
-            <img src="/photo_tgkn/phototek/camion45.jpg" class="col-10 expertises" alt="">
+            <h2 class="expertise-item">Transport palettisé</h2>
+            <img src="/photo_tgkn/phototek/camion29.jpg" class="col-10 expertises expertise-item" alt="">
         </div>
         <div class="col-md-5 col-xs-12 text-center">
             <br>
             <br>
-            <h2>Transport vrac bois</h2>
-            <img src="/photo_tgkn/phototek/camion34.jpg" class="col-10 expertises" alt="">
+            <h2 class="expertise-item">Transport vrac sur-mesure</h2>
+            <img src="/photo_tgkn/phototek/camion45.jpg" class="col-10 expertises expertise-item" alt="">
         </div>
         <div class="col-md-5 col-xs-12 text-center">
             <br>
             <br>
-            <h2>Transport vrac céréals</h2>
-            <img src="/photo_tgkn/phototek/camion18.jpg" class="col-10 expertises" alt="">
+            <h2 class="expertise-item">Transport vrac bois</h2>
+            <img src="/photo_tgkn/phototek/camion34.jpg" class="col-10 expertises expertise-item" alt="">
         </div>
         <div class="col-md-5 col-xs-12 text-center">
             <br>
             <br>
-            <h2>Transport vrac divers</h2>
-            <img src="/photo_tgkn/phototek/camion37.jpg" class="col-10 expertises" alt="">
+            <h2 class="expertise-item">Transport vrac céréals</h2>
+            <img src="/photo_tgkn/phototek/camion18.jpg" class="col-10 expertises expertise-item" alt="">
+        </div>
+        <div class="col-md-5 col-xs-12 text-center">
+            <br>
+            <br>
+            <h2 class="expertise-item">Transport vrac divers</h2>
+            <img src="/photo_tgkn/phototek/camion37.jpg" class="col-10 expertises expertise-item" alt="">
         </div>
     </div>
     </section>
     <section class="row">
+        <div class="col-md-9 col-xs-12">
+        <span class="col-md-7 col-xs-12 double-quote"><img src="/photo_tgkn/img_site/double_quote.png"></span>
         <h1 class="titre">Pourquoi nous faire confiance?</h1>
-        <p class="col-10 col-md-4 text-80 text">
+        
+        <p class="col-sm-10 col-md-7 text-80 text">
+           
             Chez TGKN, la qualité et la confiance sont au cœur de tout ce que nous faisons. 
             Forts de nombreuses années d'expérience dans le transport, nous sommes fiers de notre engagement 
             inébranlable envers nos clients et partenaires. Nous croyons que la livraison de votre cargaison 
@@ -119,7 +123,15 @@
             <br>
             <br>
         </p>
+        <div class="col-md-11 col-xs-12 double-quote-bas text-right">
+            <span class="col-md-11 col-xs-12 double-quote-bas text-right">
+                <img src="/photo_tgkn/img_site/double_quote.png" class="double-quote-bas inverted">
+            </span>
+        </div>
+    </div>
+        
     </section>
+    
     <footer class="container-fluid full-width-footer row footer">
         <div class="footer-widgets col-md-3 col-sm-6 col-xs-12 text-center">
             <h5>Transport TGKN</h5>
