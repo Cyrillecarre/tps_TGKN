@@ -31,6 +31,14 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+    var mentionLegalButton = document.getElementById("mentionLegale");
+
+    mentionLegalButton.addEventListener("click", function() {
+        window.location.href = "mention.html";
+    });
+});
+
 //animation des bouton nav
 
 document.addEventListener("DOMContentLoaded", function() {

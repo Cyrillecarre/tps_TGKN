@@ -110,3 +110,23 @@
 .double-quote-bas {
     transform: scaleX(-1);  
 }
+
+.where {
+    background-color: rgb(222, 217, 211) ;
+    padding-bottom: 100px;
+}
+
+.btnMention {
+    background-color: rgb(116, 116, 219);
+    border-radius: 10px;
+    color:antiquewhite;
+}
+
+.mentionLegale {
+    background-color:rgb(222, 217, 211);
+    padding-bottom: 50px;
+}
+
+.titreMention {
+    text-decoration: underline;
+}
