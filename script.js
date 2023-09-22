@@ -1,12 +1,13 @@
+
 //logique pour les bouton
+
 document.addEventListener("DOMContentLoaded", function () {
     var photoButton = document.getElementById("photoButton");
 
     photoButton.addEventListener("click", function () {
-        window.location.href = "photo.html";
+        window.location.href = "carrousel.html";
     });
 });
-
 document.addEventListener("DOMContentLoaded", function () {
     var contactButton = document.getElementById("contactButton");
 
@@ -14,7 +15,6 @@ document.addEventListener("DOMContentLoaded", function () {
         window.location.href = "contact.html";
     });
 });
-
 document.addEventListener("DOMContentLoaded", function() {
     var homeButton = document.getElementById("homeButton");
 
@@ -22,7 +22,6 @@ document.addEventListener("DOMContentLoaded", function() {
         window.location.href = "index.html";
     });
 });
-
 document.addEventListener("DOMContentLoaded", function() {
     var expertiseSection = document.getElementById("expertise");
 
@@ -30,7 +29,6 @@ document.addEventListener("DOMContentLoaded", function() {
         expertiseSection.scrollIntoView({ behavior: "smooth" });
     }
 });
-
 document.addEventListener("DOMContentLoaded", function() {
     var mentionLegalButton = document.getElementById("mentionLegale");
 
@@ -38,6 +36,8 @@ document.addEventListener("DOMContentLoaded", function() {
         window.location.href = "mention.html";
     });
 });
+
+
 
 //animation des bouton nav
 
@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 var translateValue = (navItems.lenght - index - 1) * -20;
                 navItems[index].style.transform = "translateX(" + translateValue + "px)";
                 navItems[index].style.opacity = 1;
-                navItems[index].style.color = "blue"; // Changez la couleur du texte pendant l'animation
+                navItems[index].style.color = "antiquewhite"; // Changez la couleur du texte pendant l'animation
                 animateNavItems(index + 1);
             }, 600); // 0,2 seconde d'intervalle
         }
@@ -74,7 +74,6 @@ document.addEventListener("DOMContentLoaded", function() {
             rect.right <= (window.innerWidth || document.documentElement.clientWidth)
         );
     }
-
     function animateElements() {
         expertiseItems.forEach(function(item) {
             if (isElementInViewport(item)) {
@@ -83,7 +82,6 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
     }
-
     window.addEventListener("scroll", animateElements);
     animateElements();
 });

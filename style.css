@@ -14,7 +14,15 @@
 }
 
 .nav-item {
+    display: flex;
     padding: 30px;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(114, 158, 224);
+    width: 200px;
+    height: 50px;
+    border-radius: 40px;
 }
 
 .row {
@@ -58,9 +66,10 @@
 .footer-widgets {
     padding: 50px;
     margin: 0;
-    background-color: rgb(115, 156, 223);
+    background-color: #1d385def;
     height: 200px;
     align-items: center;
+    color: whitesmoke;
 }
 .full-width-footer {
     width: 100% !important;
@@ -101,10 +110,29 @@
     animation-fill-mode: forwards;
 }
 
+.nav-item {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.nav-item:nth-child(1) {
+    animation-delay: 0.3s;
+}
+.nav-item:nth-child(2) {
+    animation-delay: 0.6s;
+}
+.nav-item:nth-child(3) {
+    animation-delay: 0.9s;
+}
+.nav-item:nth-child(4) {
+    animation-delay: 1.3s;
+}
+
+
 .expertise-item {
     transform: translateY(50px);
     opacity: 0;
-    transition: transform 0.5s ease, opacity 0.5s ease;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    max-height: 80vh;
+    width: auto;
 }
 
 .double-quote-bas {
@@ -129,4 +157,65 @@
 
 .titreMention {
     text-decoration: underline;
+}
+
+.contact {
+    background-color:rgb(222, 217, 211);
+    padding-bottom: 70px;
+}
+.titreContact {
+    height: 100px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.imageProfil {
+    height: 25vh;
+}
+/* CSS pour la première diapositive */
+.carousel-inner img {
+    width: auto;
+    height: 100vh;
+}
+
+.sectionclass {
+    padding-bottom: 50px;
+    padding-top: 50px;
+    background-color: rgb(222, 217, 211);
+}
+
+/* CSS personnalisé pour le carrousel */
+.carousel-inner {
+    transition: transform 4s ease-in-out; /* Ajustez la durée et la fonction de transition selon vos préférences */
+}
+
+/* Optionnel : Personnalisez les flèches de contrôle */
+.carousel-control-prev, .carousel-control-next {
+    font-size: 4rem; /* Ajustez la taille des icônes de contrôle */
+    background-color: rgba(122, 59, 59, 0.5); /* Couleur de fond des icônes de contrôle */
+    border-radius: 50%; /* Forme du bouton de contrôle */
+}
+
+/* Optionnel : Personnalisez les indicateurs (boutons de navigation) */
+.carousel-indicators {
+    list-style: none;
+    text-align: center;
+    width: 150px;
+    height: 50px;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    width: 20px; /* Ajustez la largeur des indicateurs */
+    height: 20px; /* Ajustez la hauteur des indicateurs */
+    background-color: rgba(0, 0, 0, 0.5); /* Couleur des indicateurs inactifs */
+    border-radius: 50%; /* Forme des indicateurs */
+    margin: 0 10px; /* Espace entre les indicateurs */
+    cursor: pointer;
+}
+
+.carousel-indicators .active {
+    background-color: rgba(0, 0, 0, 0.8); /* Couleur de l'indicateur actif */
 }
