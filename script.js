@@ -38,27 +38,11 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-
-//animation des bouton nav
-
-document.addEventListener("DOMContentLoaded", function() {
-    var navItems = document.querySelectorAll(".nav-link");
-    
-    function animateNavItems(index) {
-        if (index < navItems.length) {
-            setTimeout(function() {
-                var translateValue = (navItems.lenght - index - 1) * -20;
-                navItems[index].style.transform = "translateX(" + translateValue + "px)";
-                navItems[index].style.opacity = 1;
-                navItems[index].style.color = "antiquewhite"; // Changez la couleur du texte pendant l'animation
-                animateNavItems(index + 1);
-            }, 600); // 0,2 seconde d'intervalle
-        }
-    }
-
-    animateNavItems(0);
+//animation de l'image accueil
+window.addEventListener('load', function() {
+    var image = document.getElementById('imageaccueil');
+    image.classList.add('show');
 });
-
 
 //animation de la section expertise et photos
 
